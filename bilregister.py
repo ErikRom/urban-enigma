@@ -56,9 +56,32 @@ b_car.set_brand('Mercedes')
 b_car.get_brand()
 
 
-
 c_car = Car('Ferarri', 'Cyan', '999')
 
 
 d_car = Car('Porsche', 'Röd', '2000')
+
+
+my_cars = [a_car, b_car, c_car, d_car]
+
+for cars in my_cars:
+    print(cars.brand, cars.color, cars.mileage)
+
+    
+#Början till "om du hinner" uppgiften
+val = input("Vad se märken, färger eller miltal (Skriv 'avsluta' för att avsluta): ")
+
+if val == "märken":
+    alfabetet = "abcdefghijklmnopqrstuvwxyz"
+    for cars in my_cars:
+        print(cars.brand)
+
+if val == "färger":
+    alfabetet = "abcdefghijklmnopqrstuvwxyz"
+    for cars in my_cars:
+        print(cars.color)
+
+if val == "miltal":
+    for cars in my_cars:
+        print(cars.mileage)
 
